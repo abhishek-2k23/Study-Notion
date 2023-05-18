@@ -3,7 +3,6 @@ import frameImage from "../assets/frame.png";
 import {FcGoogle} from "react-icons/fc";
 import LogInForm from "./LogInForm";
 import SignUpForm from "./SignUpForm";
-import Image from "../assets/login.png";
 const Tempelate = ({title,desc1,desc2,fromtype,image,setLoggedIn}) => {
     return (
         <div className="md:w-9/12 m-auto w-11/12 flex justify-between pt-10 ">
