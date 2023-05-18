@@ -19,7 +19,7 @@ function App() {
         <Navbar isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn}/>
       </div>
       <Routes>
-          <Route path="/" element={<Home isLoggedIn={isLoggedIn}/>} />
+          <Route index path="/" element={<Home isLoggedIn={isLoggedIn}/>} />
           <Route path="/About" element={<About/>} />
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/Dashboard" element=
@@ -31,6 +31,8 @@ function App() {
            />
           <Route path="/Login" element={<Login setLoggedIn={setLoggedIn}/>} />
           <Route path="/Signup" element={<Signup setLoggedIn={setLoggedIn}/>} />
+          <Route path="*" element={<Home isLoggedIn={isLoggedIn}/>} />
+
 
       </Routes>
     </div>
